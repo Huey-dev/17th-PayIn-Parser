@@ -3,9 +3,9 @@
 if (!process.env.__ALREADY_BOOTSTRAPPED_ENVS) require('dotenv').config();
 
 const fs = require('fs');
+const { createServer } = require('@app-core/server');
 const { createConnection } = require('@app-core/mongoose');
-const { createServer } = require('./core/server');
-const { createQueue } = require('./core/queue');
+const { createQueue } = require('@app-core/queue');
 
 const canLogEndpointInformation = process.env.CAN_LOG_ENDPOINT_INFORMATION;
 

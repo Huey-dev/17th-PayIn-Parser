@@ -54,6 +54,7 @@
     "joi": "^17.12.2",
     "jsonwebtoken": "^9.0.2",
     "knex": "^3.1.0",
+    "module-alias": "^2.2.3",
     "mongoose": "^8.2.0",
     "mysql2": "^3.9.1",
     "pino": "^8.19.0",
@@ -80,5 +81,23 @@
     "mocha": "^10.5.1",
     "node-mocks-http": "^1.14.1",
     "prettier": "^3.3.2"
-  }
+  },
+  "_moduleAliases": {
+  "@app-core/errors": "core/errors",
+  "@app-core/handlebars": "core/handlebars",
+  "@app-core/http-request": "core/http-request",
+  "@app-core/jwt": "core/jwt",
+  "@app-core/knex": "core/knex",
+  "@app-core/logger": "core/logger",
+  "@app-core/mock-factory": "core/mock-factory",
+  "@app-core/mongoose": "core/mongoose",
+  "@app-core/notifier": "core/notifier",
+  "@app-core/queue": "core/queue",
+  "@app-core/randomness": "core/randomness",
+  "@app-core/repository-factory": "core/repository-factory",
+  "@app-core/security": "core/security",
+  "@app-core/server": "core/express",
+  "@app-core/validator": "core/validator-vsl"
+}
+
 }
